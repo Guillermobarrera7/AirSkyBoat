@@ -13,11 +13,14 @@ Single-player local server. Priorities: stability while playing, log-driven debu
 
 ## Version state
 
-- Repo is at `44f323f158f5` — the **final** commit of the archived upstream `base` branch
+- Working branch is **`moe-fixes`** — all local fixes are committed here and pushed to the fork.
+- `base` stays pristine at `44f323f158f5`, the **final** commit of the archived upstream `base` branch
   (upstream https://github.com/AirSkyBoat/AirSkyBoat archived 2025-02-24; no further updates will ever exist).
+  `git diff base` shows every local fix ever made.
 - Updated from `f37ebf70c6` (May 2024) on 2026-07-05. Rollback = old commit + `backup-2026-07-05` exes + DB dump restore.
 - `origin` = Guillermo's fork (https://github.com/Guillermobarrera7/AirSkyBoat.git); `upstream` = archived original.
 - Do NOT look for upstream updates; the project is frozen. Fixes are ours to make locally.
+- GitHub auth: `gh` CLI is installed and logged in as Guillermobarrera7; it is git's credential helper. Push after each committed fix.
 
 ## Start / stop
 
